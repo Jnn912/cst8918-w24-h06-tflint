@@ -1,11 +1,13 @@
-# Define config variables
-variable "labelPrefix" {
+variable "label_prefix" {
   type        = string
+  default     = "jin00098"  # 使用你的学院用户名
   description = "Your college username. This will form the beginning of various resource names."
 }
 
 variable "region" {
-  default = "westus3"
+  type        = string
+  default     = "westus3"
+  description = "The Azure region where resources will be deployed."
 }
 
 variable "admin_username" {
